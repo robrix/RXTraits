@@ -15,6 +15,7 @@
 		D48A8DAA15A12F420069AC6F /* RXTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = D48A8DA915A12F420069AC6F /* RXTrait.h */; };
 		D48A8DAD15A12F6F0069AC6F /* RXTraitDecorator.h in Headers */ = {isa = PBXBuildFile; fileRef = D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */; };
 		D48A8DAE15A12F6F0069AC6F /* RXTraitDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */; };
+		D48A8DB015A132F20069AC6F /* RXTraitDecoratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A8DAF15A132F20069AC6F /* RXTraitDecoratorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		D48A8DA915A12F420069AC6F /* RXTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXTrait.h; sourceTree = "<group>"; };
 		D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXTraitDecorator.h; sourceTree = "<group>"; };
 		D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXTraitDecorator.m; sourceTree = "<group>"; };
+		D48A8DAF15A132F20069AC6F /* RXTraitDecoratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXTraitDecoratorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D48A8D9915A12EDE0069AC6F /* Supporting Files */,
+				D48A8DAF15A132F20069AC6F /* RXTraitDecoratorTests.m */,
 			);
 			path = RXTraitsTests;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48A8DB015A132F20069AC6F /* RXTraitDecoratorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
