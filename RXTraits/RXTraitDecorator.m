@@ -17,6 +17,10 @@
 	return decorator;
 }
 
+-(id)init {
+	return self;
+}
+
 
 -(BOOL)conformsToProtocol:(Protocol *)protocol {
 	return protocol_isEqual(protocol, _trait.traitProtocol);
@@ -29,10 +33,7 @@
 		target = _object;
 	else if ([_trait respondsToSelector:selector])
 		target = _trait;
-//	else
-//		target = [super forwardingTargetForSelector:selector];
 	return target;
-//	protocol_getMethodDescription(_trait.traitProtocol, selector, NO, YES);
 }
 
 @end
