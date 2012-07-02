@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D48A8D8115A12EDE0069AC6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48A8D8015A12EDE0069AC6F /* Cocoa.framework */; };
-		D48A8D8B15A12EDE0069AC6F /* RXTraits.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A8D8A15A12EDE0069AC6F /* RXTraits.m */; };
 		D48A8D9315A12EDE0069AC6F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48A8D9215A12EDE0069AC6F /* SenTestingKit.framework */; };
 		D48A8D9415A12EDE0069AC6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48A8D8015A12EDE0069AC6F /* Cocoa.framework */; };
 		D48A8D9715A12EDE0069AC6F /* libRXTraits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48A8D7D15A12EDE0069AC6F /* libRXTraits.a */; };
 		D48A8D9D15A12EDE0069AC6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D48A8D9B15A12EDE0069AC6F /* InfoPlist.strings */; };
-		D48A8DA015A12EDE0069AC6F /* RXTraitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A8D9F15A12EDE0069AC6F /* RXTraitsTests.m */; };
+		D48A8DAA15A12F420069AC6F /* RXTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = D48A8DA915A12F420069AC6F /* RXTrait.h */; };
+		D48A8DAD15A12F6F0069AC6F /* RXTraitDecorator.h in Headers */ = {isa = PBXBuildFile; fileRef = D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */; };
+		D48A8DAE15A12F6F0069AC6F /* RXTraitDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +33,14 @@
 		D48A8D8315A12EDE0069AC6F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D48A8D8415A12EDE0069AC6F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D48A8D8515A12EDE0069AC6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D48A8D8815A12EDE0069AC6F /* RXTraits-Prefix.pch */ = {isa = PBXFileReference; path = "RXTraits-Prefix.pch"; sourceTree = "<group>"; };
-		D48A8D8915A12EDE0069AC6F /* RXTraits.h */ = {isa = PBXFileReference; path = RXTraits.h; sourceTree = "<group>"; };
-		D48A8D8A15A12EDE0069AC6F /* RXTraits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXTraits.m; sourceTree = "<group>"; };
+		D48A8D8815A12EDE0069AC6F /* RXTraits-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RXTraits-Prefix.pch"; sourceTree = "<group>"; };
 		D48A8D9115A12EDE0069AC6F /* RXTraitsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXTraitsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48A8D9215A12EDE0069AC6F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D48A8D9A15A12EDE0069AC6F /* RXTraitsTests-Info.plist */ = {isa = PBXFileReference; path = "RXTraitsTests-Info.plist"; sourceTree = "<group>"; };
+		D48A8D9A15A12EDE0069AC6F /* RXTraitsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RXTraitsTests-Info.plist"; sourceTree = "<group>"; };
 		D48A8D9C15A12EDE0069AC6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D48A8D9E15A12EDE0069AC6F /* RXTraitsTests.h */ = {isa = PBXFileReference; path = RXTraitsTests.h; sourceTree = "<group>"; };
-		D48A8D9F15A12EDE0069AC6F /* RXTraitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXTraitsTests.m; sourceTree = "<group>"; };
+		D48A8DA915A12F420069AC6F /* RXTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXTrait.h; sourceTree = "<group>"; };
+		D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXTraitDecorator.h; sourceTree = "<group>"; };
+		D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXTraitDecorator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,9 @@
 		D48A8D8615A12EDE0069AC6F /* RXTraits */ = {
 			isa = PBXGroup;
 			children = (
-				D48A8D8915A12EDE0069AC6F /* RXTraits.h */,
-				D48A8D8A15A12EDE0069AC6F /* RXTraits.m */,
+				D48A8DA915A12F420069AC6F /* RXTrait.h */,
+				D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */,
+				D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */,
 				D48A8D8715A12EDE0069AC6F /* Supporting Files */,
 			);
 			path = RXTraits;
@@ -125,8 +126,6 @@
 		D48A8D9815A12EDE0069AC6F /* RXTraitsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D48A8D9E15A12EDE0069AC6F /* RXTraitsTests.h */,
-				D48A8D9F15A12EDE0069AC6F /* RXTraitsTests.m */,
 				D48A8D9915A12EDE0069AC6F /* Supporting Files */,
 			);
 			path = RXTraitsTests;
@@ -148,6 +147,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48A8DAA15A12F420069AC6F /* RXTrait.h in Headers */,
+				D48A8DAD15A12F6F0069AC6F /* RXTraitDecorator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +197,9 @@
 		D48A8D7415A12EDD0069AC6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RX;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Black Pixel";
+				ORGANIZATIONNAME = "Monochrome Industries";
 			};
 			buildConfigurationList = D48A8D7715A12EDD0069AC6F /* Build configuration list for PBXProject "RXTraits" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -249,7 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48A8D8B15A12EDE0069AC6F /* RXTraits.m in Sources */,
+				D48A8DAE15A12F6F0069AC6F /* RXTraitDecorator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48A8DA015A12EDE0069AC6F /* RXTraitsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
