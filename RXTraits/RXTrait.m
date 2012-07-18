@@ -6,7 +6,7 @@
 #import <objc/runtime.h>
 
 NSString *RXTraitSubclassName(Class<RXTrait> trait, Class targetClass) {
-	return [NSString stringWithFormat:@"%@_%@", targetClass, trait];
+	return [NSString stringWithFormat:@"RXTrait_%@_%@", trait, targetClass];
 }
 
 Class RXTraitCreateSubclassOfTargetClass(Class<RXTrait> trait, Class targetClass) {
