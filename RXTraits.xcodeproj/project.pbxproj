@@ -16,6 +16,7 @@
 		D48A8DAD15A12F6F0069AC6F /* RXTraitDecorator.h in Headers */ = {isa = PBXBuildFile; fileRef = D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */; };
 		D48A8DAE15A12F6F0069AC6F /* RXTraitDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */; };
 		D48A8DB015A132F20069AC6F /* RXTraitDecoratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A8DAF15A132F20069AC6F /* RXTraitDecoratorTests.m */; };
+		D499678815B65F2A00CB8F57 /* RXTrait.m in Sources */ = {isa = PBXBuildFile; fileRef = D499678715B65F2A00CB8F57 /* RXTrait.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXTraitDecorator.h; sourceTree = "<group>"; };
 		D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXTraitDecorator.m; sourceTree = "<group>"; };
 		D48A8DAF15A132F20069AC6F /* RXTraitDecoratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXTraitDecoratorTests.m; sourceTree = "<group>"; };
+		D499678715B65F2A00CB8F57 /* RXTrait.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXTrait.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D48A8DA915A12F420069AC6F /* RXTrait.h */,
+				D499678715B65F2A00CB8F57 /* RXTrait.m */,
 				D48A8DAB15A12F6F0069AC6F /* RXTraitDecorator.h */,
 				D48A8DAC15A12F6F0069AC6F /* RXTraitDecorator.m */,
 				D48A8D8715A12EDE0069AC6F /* Supporting Files */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D48A8DAE15A12F6F0069AC6F /* RXTraitDecorator.m in Sources */,
+				D499678815B65F2A00CB8F57 /* RXTrait.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +400,7 @@
 				D48A8DA515A12EDE0069AC6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D48A8DA615A12EDE0069AC6F /* Build configuration list for PBXNativeTarget "RXTraitsTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +409,7 @@
 				D48A8DA815A12EDE0069AC6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

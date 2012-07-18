@@ -23,7 +23,7 @@
 
 
 -(BOOL)conformsToProtocol:(Protocol *)protocol {
-	return protocol_isEqual(protocol, _trait.traitProtocol);
+	return protocol_isEqual(protocol, [_trait.class traitProtocol]);
 }
 
 
@@ -39,6 +39,6 @@
 @end
 
 
-id RXTraitApply(id<RXTrait> trait, id target) {
-	return [RXTraitDecorator decorateObject:target withTrait:trait];
-}
+//id RXTraitApply(Class<RXTrait> trait, id target) {
+//	return [RXTraitDecorator decorateObject:target withTrait:[trait new]];
+//}

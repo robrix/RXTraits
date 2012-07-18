@@ -6,8 +6,8 @@
 
 @protocol RXTrait <NSObject>
 
-@property (nonatomic, readonly) Protocol *traitProtocol;
++(Protocol *)traitProtocol;
 
 @end
 
-extern id RXTraitApply(id<RXTrait> trait, id target);
+extern id RXTraitApply(Class<RXTrait> trait, id target);

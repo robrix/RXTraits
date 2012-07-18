@@ -40,7 +40,7 @@
 
 @implementation RXZClampedPoint3DTrait
 
--(Protocol *)traitProtocol {
++(Protocol *)traitProtocol {
 	return @protocol(RXPoint3D);
 }
 
@@ -61,19 +61,19 @@
 @implementation RXTraitDecoratorTests
 
 -(void)testDoesNotOverrideImplementedMethods {
-	id<RXPoint3D> point3D = RXTraitApply([RXZClampedPoint3DTrait new], [RXPoint2D new]);
+	id<RXPoint3D> point3D = RXTraitApply([RXZClampedPoint3DTrait class], [RXPoint2D new]);
 	STAssertEquals(point3D.x, 0., @"Expected to equal.");
 	point3D.x = M_PI;
 	STAssertEquals(point3D.x, M_PI, @"Expected to equal.");
 	
-	point3D = RXTraitApply([RXZClampedPoint3DTrait new], [RXPoint3D new]);
+	point3D = RXTraitApply([RXZClampedPoint3DTrait class], [RXPoint3D new]);
 	STAssertEquals(point3D.z, 0., @"Expected to equal.");
 	point3D.z = M_PI;
 	STAssertEquals(point3D.z, M_PI, @"Expected to equal.");
 }
 
 -(void)testAddsTraitMethods {
-	id<RXPoint3D> point3D = RXTraitApply([RXZClampedPoint3DTrait new], [RXPoint2D new]);
+	id<RXPoint3D> point3D = RXTraitApply([RXZClampedPoint3DTrait class], [RXPoint2D new]);
 	STAssertEquals(point3D.z, 0., @"Expected to equal.");
 	point3D.z = M_PI;
 	STAssertEquals(point3D.z, 0., @"Expected to equal.");
