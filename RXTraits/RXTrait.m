@@ -37,8 +37,11 @@ BOOL RXTraitIsAlreadyApplied(Class<RXTrait> trait, Class targetClass) {
 
 id RXTraitApply(Class<RXTrait> trait, id target) {
 	Class targetClass = [target class];
-	if (!RXTraitIsAlreadyApplied(trait, targetClass)) {
-		object_setClass(target, RXTraitSubclassOfTargetClass(trait, targetClass));
-	}
+	if (([trait targetProtocol] == nil) || [target conformsToProtocol:[trait targetProtocol]]) {
+		if (!RXTraitIsAlreadyApplied(trait, targetClass)) {
+			object_setClass(target, RXTraitSubclassOfTargetClass(trait, targetClass));
+		}
+	} else
+		target = nil;
 	return target;
 }

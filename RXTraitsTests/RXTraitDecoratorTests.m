@@ -44,6 +44,10 @@
 	return @protocol(RXPoint3D);
 }
 
++(Protocol *)targetProtocol {
+	return @protocol(RXPoint2D);
+}
+
 @dynamic x, y;
 
 -(CGFloat)z {

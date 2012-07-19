@@ -7,6 +7,7 @@
 @protocol RXTrait <NSObject>
 
 +(Protocol *)traitProtocol;
++(Protocol *)targetProtocol; // can be nil
 
 @end
 
