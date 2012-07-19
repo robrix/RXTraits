@@ -6,7 +6,7 @@
 #import <objc/runtime.h>
 
 NSString *RXTraitSubclassName(Class<RXTrait> trait, Class targetClass) {
-	return [NSString stringWithFormat:@"RXTrait_%@_%@", trait, targetClass];
+	return [NSString stringWithFormat:@"RXTraitSubclassApplying_%@_To_%@", trait, targetClass];
 }
 
 Class RXTraitCreateSubclassOfTargetClass(Class<RXTrait> trait, Class targetClass) {
@@ -31,9 +31,13 @@ Class RXTraitSubclassOfTargetClass(Class<RXTrait> trait, Class targetClass) {
 	?:	RXTraitCreateSubclassOfTargetClass(trait, targetClass);
 }
 
+BOOL RXTraitIsAlreadyApplied(Class<RXTrait> trait, Class targetClass) {
+	return [NSStringFromClass(targetClass) rangeOfString:@"RXTraitSubclassApplying_"].location != NSNotFound;
+}
+
 id RXTraitApply(Class<RXTrait> trait, id target) {
 	Class targetClass = [target class];
-	if (!class_conformsToProtocol(targetClass, [trait traitProtocol])) {
+	if (!RXTraitIsAlreadyApplied(trait, targetClass)) {
 		object_setClass(target, RXTraitSubclassOfTargetClass(trait, targetClass));
 	}
 	return target;
